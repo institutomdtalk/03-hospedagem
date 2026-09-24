@@ -1,4 +1,12 @@
-<p>Getting Around — English for Travelers</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting Around — English for Travelers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F5F4F1;
@@ -34,7 +42,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
 /* ══ HERO ══ */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(155deg,#111A30 0%,#1B2640 28%,#263556 55%,#1B2640 80%,#111A30 100%)}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 45% at 30% 50%,rgba(194,185,167,.06) 0%,transparent 55%),radial-gradient(ellipse 50% 40% at 70% 45%,rgba(166,152,130,.04) 0%,transparent 50%);z-index:1}
-.hero::after{content:'';position:absolute;inset:0;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='<a href="http://www.w3.org/2000/svg" class="redactor-autoparser-object">http://www.w3.org/2000/svg</a>'%3E%3Cpath d='M40 0v80M0 40h80' stroke='%23C2B9A7' stroke-opacity='.04' stroke-width='.5'/%3E%3C/svg%3E");z-index:1}
+.hero::after{content:'';position:absolute;inset:0;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0v80M0 40h80' stroke='%23C2B9A7' stroke-opacity='.04' stroke-width='.5'/%3E%3C/svg%3E");z-index:1}
 .hero-c{position:relative;z-index:2;text-align:center;padding:2rem;max-width:800px;animation:hIn 1.3s ease-out}
 @keyframes hIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .hero-badge{display:inline-block;font-family:var(--fb);font-size:.65rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--beige);border:1px solid rgba(194,185,167,.25);padding:.42rem 1.3rem;border-radius:100px;margin-bottom:2rem;background:rgba(194,185,167,.06)}
@@ -137,7 +145,17 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
 
 /* ══ ANIM ══ */
 .fi{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}.fi.v{opacity:1;transform:translateY(0)}
+
+/* ═══ STANDARD FOOTER — identical on every Viaje Bem module ═══ */
+footer.footer{text-align:center;padding:3.5rem 2rem;border-top:1px solid #ECEEF4;margin-top:3rem;line-height:1.75}
+footer.footer .footer-b{font-family:'Bodoni Moda',Georgia,serif;font-size:1.25rem;font-weight:400;color:#141B2D;margin-bottom:.35rem}
+footer.footer .footer-t{font-family:'Nunito Sans',sans-serif;font-size:.76rem;color:#7A8299;line-height:1.75}
+footer.footer .sig{display:flex;flex-direction:column;align-items:center;gap:1.1rem;margin-top:2.2rem;padding-top:2rem;border-top:1px solid #ECEEF4}
+footer.footer .sig-n{font-family:'Bodoni Moda',Georgia,serif;font-size:1.05rem;font-weight:400;color:#141B2D}
+footer.footer .sig-r{font-family:'Nunito Sans',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#C9A84C;margin-top:.15rem}
 </style>
+</head>
+<body>
 <!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="hero-c">
@@ -167,13 +185,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
   <li><a href="#s15">Pedágio & Multas</a></li>
 </ul></div></nav>
 <!-- ═══ MAIN ═══ -->
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p><main class="main"><p></p>
-<!-- ███ 1 ███ -->
+<main class="main"><!-- ███ 1 ███ -->
 <section class="sc" id="s1">
   <div class="sc-tag"><span class="n">1</span> Car Rental Basics</div>
   <h2>Aluguel de Carro — Antes de Ir ao Balcão</h2>
@@ -213,7 +225,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
     <div class="cd"><div class="en">"Can I see your driver's license, passport, and credit card?"</div><div class="pt">Posso ver sua carteira, passaporte e cartão de crédito?</div></div>
     <div class="cd"><div class="en">"Do you have a reservation?"</div><div class="pt">Tem uma reserva?</div></div>
     <div class="cd"><div class="en">"What time will you be returning the car?"</div><div class="pt">Que horas vai devolver o carro?</div></div>
-    <div class="cd"><div class="en">"Would you like to add an additional driver?"</div><div class="pt">Gostaria de adicionar um motorista adicional?</div><div class="nt info"><strong>Additional driver</strong> = motorista adicional. Nos EUA, quem não está no contrato <strong>não pode dirigir</strong>. Se seu cônjuge vai dirigir também, adicione — geralmente custa $10–15/dia.</div></div>
+    <div class="cd"><div class="en">"Would you like to add an additional driver?"</div><div class="pt">Gostaria de adicionar um motorista adicional?</div><div class="nt info"><strong>Additional driver</strong> = motorista adicional. Nos EUA, quem não está no contrato <strong>não pode dirigir</strong>. Se seu cônjuge vai dirigir também, adicione — geralmente custa $10–15/dia (Avis, Budget, Enterprise e National não cobram pelo cônjuge; na Hertz, a isenção vale para membros do programa de fidelidade).</div></div>
     <div class="cd"><div class="en">"Would you like to upgrade to a larger vehicle?"</div><div class="pt">Gostaria de fazer upgrade para um veículo maior?</div></div>
   </div>
 
@@ -271,9 +283,9 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
   <div class="gr"><div class="gr-t">Diferenças importantes nos EUA</div>
     <div class="cd"><div class="en">"Right turn on red"</div><div class="pt">Conversão à direita no sinal vermelho (permitido na maioria dos estados, a menos que haja placa dizendo "No turn on red").</div></div>
     <div class="cd"><div class="en">"Four-way stop / All-way stop"</div><div class="pt">Cruzamento com parada obrigatória para todos. Quem chegou primeiro, passa primeiro.</div></div>
-    <div class="cd"><div class="en">"School zone — 15 mph when lights are flashing"</div><div class="pt">Zona escolar — 24 km/h quando as luzes estiverem piscando.</div><div class="nt warn"><strong>Multas em school zones são gravíssimas.</strong> Reduza SEMPRE quando ver luzes amarelas piscando.</div></div>
+    <div class="cd"><div class="en">"School zone — 15 mph when lights are flashing"</div><div class="pt">Zona escolar — 24 km/h quando as luzes estiverem piscando.</div><div class="nt warn"><strong>Multas em school zones são gravíssimas.</strong> Reduza SEMPRE quando vir luzes amarelas piscando.</div></div>
     <div class="cd"><div class="en">"Speed limit 65 mph"</div><div class="pt">Limite de velocidade 105 km/h. (1 mph = 1,6 km/h)</div></div>
-    <div class="cd"><div class="en">"Carpool lane / HOV lane (High Occupancy Vehicle)"</div><div class="pt">Faixa exclusiva para veículos com 2+ passageiros.</div></div>
+    <div class="cd"><div class="en">"Carpool lane / HOV lane (High Occupancy Vehicle)"</div><div class="pt">Faixa exclusiva para veículos com 2+ ocupantes, contando o motorista (em algumas vias, 3+).</div></div>
     <div class="cd"><div class="en">"Do not pass" / "No passing zone"</div><div class="pt">Proibido ultrapassar.</div></div>
   </div>
 
@@ -302,8 +314,8 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
   <p class="sc-sub">Abastecer nos EUA é self-service — e funciona diferente do Brasil.</p>
 
   <div class="gr"><div class="gr-t">Frases essenciais</div>
-    <div class="cd"><div class="en">"Where is the nearest gas station?"</div><div class="pt">Onde fica o posto de gasolina mais próximo?</div><div class="nt info"><strong>Gas station</strong> (EUA) ou <strong>petrol station</strong> (UK). Nunca diga "fuel station" — ninguém fala assim.</div></div>
-    <div class="cd"><div class="en">"Regular, plus, or premium?" → "Regular, please."</div><div class="pt">"Comum, aditivada ou premium?" → "Comum, por favor."</div></div>
+    <div class="cd"><div class="en">"Where is the nearest gas station?"</div><div class="pt">Onde fica o posto de gasolina mais próximo?</div><div class="nt info"><strong>Gas station</strong> = posto de gasolina. Nunca diga "fuel station" — ninguém fala assim.</div></div>
+    <div class="cd"><div class="en">"Regular, plus, or premium?" → "Regular, please."</div><div class="pt">"Comum, intermediária ou premium?" → "Comum, por favor."</div></div>
     <div class="cd"><div class="en">"I'd like to fill it up."</div><div class="pt">Quero encher o tanque.</div></div>
     <div class="cd"><div class="en">"Can I pay at the pump?" / "Do I need to pay inside first?"</div><div class="pt">Posso pagar na bomba? / Preciso pagar lá dentro primeiro?</div><div class="nt tip">Nos EUA, a maioria das bombas aceita cartão direto. Se usar cartão estrangeiro e ele não funcionar, entre na loja e diga: <strong>"I'd like to prepay $40 on pump number 5."</strong> (Quero pagar antecipado $40 na bomba 5.)</div></div>
     <div class="cd"><div class="en">"The pump isn't working. Can you check it?"</div><div class="pt">A bomba não está funcionando. Pode verificar?</div></div>
@@ -351,7 +363,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
   <div class="gr"><div class="gr-t">Comunicando-se com o motorista</div>
     <div class="cd"><div class="en">"Hi, are you [driver's name]? I'm your rider."</div><div class="pt">Oi, você é o [nome]? Sou seu passageiro.</div></div>
     <div class="cd"><div class="en">"I'm at the main entrance. I'm wearing a blue jacket."</div><div class="pt">Estou na entrada principal. Estou com jaqueta azul.</div></div>
-    <div class="cd"><div class="en">"Could you pop the trunk, please? I have luggage."</div><div class="pt">Pode abrir o porta-malas, por favor? Tenho bagagem.</div><div class="nt info"><strong>Trunk</strong> (EUA) ou <strong>boot</strong> (UK) = porta-malas.</div></div>
+    <div class="cd"><div class="en">"Could you pop the trunk, please? I have luggage."</div><div class="pt">Pode abrir o porta-malas, por favor? Tenho bagagem.</div><div class="nt info"><strong>Trunk</strong> = porta-malas.</div></div>
     <div class="cd"><div class="en">"Can you drop me off at the corner, please? I'll walk from there."</div><div class="pt">Pode me deixar na esquina, por favor? Eu ando dali.</div></div>
     <div class="cd"><div class="en">"Actually, there's been a change of plans. Can we go to [new address] instead?"</div><div class="pt">Na verdade, houve mudança de planos. Podemos ir para [novo endereço]?</div></div>
     <div class="cd"><div class="en">"Could you turn on the AC / turn down the music, please?"</div><div class="pt">Poderia ligar o ar-condicionado / abaixar a música, por favor?</div></div>
@@ -381,7 +393,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
   <div class="gr"><div class="gr-t">Pegando o táxi</div>
     <div class="cd"><div class="en">"Taxi!" / "Can you take me to [address / place]?"</div><div class="pt">Táxi! / Pode me levar para [endereço / lugar]?</div></div>
     <div class="cd"><div class="en">"How much to go to downtown / the airport / this address?"</div><div class="pt">Quanto custa ir para o centro / o aeroporto / esse endereço?</div></div>
-    <div class="cd"><div class="en">"Is the meter running?" / "Can you turn on the meter, please?"</div><div class="pt">O taxímetro está ligado? / Pode ligar o taxímetro, por favor?</div><div class="nt warn">Em alguns países, motoristas tentam cobrar "preço fixo" sem taxímetro — geralmente bem mais caro. <strong>Sempre peça para ligar o meter</strong>, exceto onde o preço fixo é oficial (ex: táxis do aeroporto de NYC para Manhattan).</div></div>
+    <div class="cd"><div class="en">"Is the meter running?" / "Can you turn on the meter, please?"</div><div class="pt">O taxímetro está ligado? / Pode ligar o taxímetro, por favor?</div><div class="nt warn">Em alguns países, motoristas tentam cobrar "preço fixo" sem taxímetro — geralmente bem mais caro. <strong>Sempre peça para ligar o meter</strong>, exceto onde o preço fixo é oficial (ex: táxis do aeroporto JFK para Manhattan).</div></div>
     <div class="cd"><div class="en">"Could you take the highway / avoid tolls / take the fastest route?"</div><div class="pt">Poderia pegar a rodovia / evitar pedágios / ir pelo caminho mais rápido?</div></div>
     <div class="cd"><div class="en">"Can you stop here, please? / Pull over right here."</div><div class="pt">Pode parar aqui, por favor? / Encoste aqui.</div></div>
   </div>
@@ -470,9 +482,9 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
     <div class="dlg-h">Diálogo Prático</div>
     <div class="dlg-ctx">Na rua — você está procurando um museu</div>
     <div class="ln"><div class="av you">You</div><div class="bb"><div class="en">Excuse me, I'm trying to find the Met Museum. Am I going the right way?</div><div class="pt">Com licença, estou tentando encontrar o Met Museum. Estou no caminho certo?</div></div></div>
-    <div class="ln"><div class="av them">??</div><div class="bb"><div class="en">Actually, you're going the wrong way. You need to go back two blocks, then turn left on Fifth Avenue. You can't miss it.</div><div class="pt">Na verdade, está na direção errada. Precisa voltar duas quadras, depois virar à esquerda na Fifth Avenue. Não tem como errar.</div></div></div>
+    <div class="ln"><div class="av them">STR</div><div class="bb"><div class="en">Actually, you're going the wrong way. You need to go back two blocks, then turn left on Fifth Avenue. You can't miss it.</div><div class="pt">Na verdade, está na direção errada. Precisa voltar duas quadras, depois virar à esquerda na Fifth Avenue. Não tem como errar.</div></div></div>
     <div class="ln"><div class="av you">You</div><div class="bb"><div class="en">Two blocks back, then left on Fifth. Got it. Is it far from here?</div><div class="pt">Duas quadras para trás, depois esquerda na Fifth. Entendi. É longe daqui?</div></div></div>
-    <div class="ln"><div class="av them">??</div><div class="bb"><div class="en">About a ten-minute walk. You'll see it on the right side.</div><div class="pt">Uns dez minutos a pé. Vai ver do lado direito.</div></div></div>
+    <div class="ln"><div class="av them">STR</div><div class="bb"><div class="en">About a ten-minute walk. You'll see it on the right side.</div><div class="pt">Uns dez minutos a pé. Vai ver do lado direito.</div></div></div>
     <div class="ln"><div class="av you">You</div><div class="bb"><div class="en">Thank you so much! I appreciate it.</div><div class="pt">Muito obrigado! Eu agradeço.</div></div></div>
   </div>
 </section>
@@ -495,13 +507,13 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
 
   <div class="vg">
     <div class="vi"><div class="en">intersection / crossroads</div><div class="pt">cruzamento</div></div>
-    <div class="vi"><div class="en">crosswalk / pedestrian crossing</div><div class="pt">faixa de pedestres</div></div>
+    <div class="vi"><div class="en">crosswalk</div><div class="pt">faixa de pedestres</div></div>
     <div class="vi"><div class="en">traffic light / stoplight</div><div class="pt">semáforo</div></div>
     <div class="vi"><div class="en">roundabout</div><div class="pt">rotatória</div></div>
     <div class="vi"><div class="en">overpass / underpass</div><div class="pt">viaduto / passagem subterrânea</div></div>
     <div class="vi"><div class="en">dead end / cul-de-sac</div><div class="pt">rua sem saída</div></div>
     <div class="vi"><div class="en">one-way street</div><div class="pt">rua de mão única</div></div>
-    <div class="vi"><div class="en">sidewalk (US) / pavement (UK)</div><div class="pt">calçada</div></div>
+    <div class="vi"><div class="en">sidewalk</div><div class="pt">calçada</div></div>
   </div>
 </section>
 <div class="sep"><span class="d"></span></div>
@@ -562,7 +574,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
     <div class="cd"><div class="en">"2-hour parking 8AM–6PM except Sundays"</div><div class="pt">Estacionamento de 2 horas entre 8h–18h exceto domingos.</div></div>
     <div class="cd"><div class="en">"Permit parking only / Resident parking only"</div><div class="pt">Estacionamento apenas com permissão / Apenas moradores.</div></div>
     <div class="cd"><div class="en">"Tow-away zone"</div><div class="pt">Zona de reboque — seu carro será guinchado.</div><div class="nt warn">Se seu carro for rebocado, vai precisar dizer: <strong>"My car was towed. Where is the tow lot?"</strong> (Meu carro foi guinchado. Onde fica o pátio de reboque?) Espere pagar $200–500+ para recuperar.</div></div>
-    <div class="cd"><div class="en">"Handicapped parking / Accessible parking"</div><div class="pt">Estacionamento para deficientes / Acessível.</div></div>
+    <div class="cd"><div class="en">"Handicapped parking / Accessible parking"</div><div class="pt">Estacionamento para pessoas com deficiência / Acessível.</div></div>
   </div>
 </section>
 <div class="sep"><span class="d"></span></div>
@@ -596,16 +608,11 @@ body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7
 <footer class="footer">
   <div class="footer-b">Getting Around — English for Travelers</div>
   <p class="footer-t">Conteúdo exclusivo para fins educacionais.<br>Desenvolvido com excelência para alunos que buscam comunicação internacional de alto nível.</p>
+  <div class="sig">
+    <div><div class="sig-n">Thaiana Faria</div><div class="sig-r">Especialista em Inglês Médico e Comunicação Científica · MD Talk</div></div>
+    <div><div class="sig-n">Thiago Faria</div><div class="sig-r">Produção de Conteúdo Técnico · The Engine Lab</div></div>
+  </div>
 </footer>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p></main>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+</main>
+</body>
+</html>
